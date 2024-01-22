@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ---------------------- header -------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    background: rgba(225, 225, 225, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* luot header */
+header.sticky { 
+    background: rgb(255, 255, 255);
+}
+/* tro con tro chuot vao header */
+header:hover {
+    background: rgb(255, 255, 255);
+}
+
+/* ---------------------- logo -------------------- */
+.logo {
+    /* font-size: 18px; */
+    flex: 1;
+    color: #42210b;
+    size: 2em;
+}
+
+/* ---------------------- main-menu -------------------- */
+.main-menu {
+    flex: 3;
+    display: flex;
+}
+
+.main-menu>li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.main-menu>li:hover .sub-menu {
+    visibility: visible;
+    top: 30px;
+}
+/* -----sub-menu */
+.sub-menu {
+    position: absolute;
+    width: 192px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    top: 24px;
+    transition: 0.3s;
+    z-index: 1;
+    background-color:white;
+    border-radius: 1px;
+    left: 0px;
+    visibility: hidden;
+}
+
+.sub-menu li {
+color: #000;
+font-size: 11px;
+}
+
+.sub-menu ul {
+padding-left: 20px;
+}
+
+.sub-menu ul a {
+font-weight: bold !important;
+font-size: 12px !important;
+}
+
+.main-menu>li a {
+font-size: 13px;
+font-weight: bold;
+display: block;
+line-height: 20px;
+color: #42210b;
+}
+
+.sub-menu-type{
+position: absolute;
+width: 180px;
+border: 1px solid #ccc;
+padding: 10px 0 10px 20px;
+top: 50px;
+transition: 0.3s;
+background-color: white;
+font-size: 8px;
+top:0px;
+left: 192px;
+visibility: hidden;
+}
+.sub-menu>li:hover .sub-menu-type{
+visibility: visible;
+}
+
+
+/* ---------------------- orther -------------------- */
+.others {
+    flex: 0;
+    display: flex;
+}
+
+.others>li {
+    padding: 0 12px;
+    color: #42210b;
+    position: relative;
+}
+
+.others>li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #42210b;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.others>li:last-child::after {
+    display: none;
+}
+
+/* ---------------------- slider -------------------- */
+#Slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #42210b;
+    background-color: beige;
+    overflow: hidden;
+}
+
+#Slider>img {
+    width:500;
+    height:500;
+}
+
+/* ---------------------- aspect -------------------- */
+/* ty le khung hinh */
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* ---------------------- dot -------------------- */
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    /* #023E73*/
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #42210b;
+}
+
+/* ---------------------- app -------------------- */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.app-google {
+    margin: 10px;
+}
+
+.app-google img {
+    height: 50px;
+    cursor: pointer;
+    width: auto;
+}
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    outline: none;
+}
+
+/* ---------------------- footer -------------------- */
+.footer-bottom {
+    margin: 20px;
+    text-align: center;
+}
+
+/* footer-bottom */
+.footer-bottom a {
+    color: #42210b;
+    font-weight: bold;
+}
+/* text */

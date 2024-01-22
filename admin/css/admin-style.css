@@ -1,0 +1,20 @@
+.is-hidden {
+    display: none;
+}
+#mau-cay-menu {
+    background-color: burlywood;
+}
+#mau-muc-cay-menu {
+    /* color: #FFFFCC; */
+    background-color: burlywood;
+    color: white;
+}
+
+#mau-info-form {
+    /* background-color: #33CC33; */
+    background-color: burlywood;
+}
+#mau-list-form {
+    background-color: burlywood;
+    color: white;
+}

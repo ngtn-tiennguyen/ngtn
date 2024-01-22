@@ -1,0 +1,41 @@
+/* contact */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact{
+    padding: 100px 0;
+    background: beige;
+}
+.album-des-collectionss{
+    padding: 20px;
+    line-height: 30px;
+    color: #42210b;
+}
+.container iframe{
+    margin-top: 20px;
+}
+input {
+    width: 60%;
+    height: 30px;
+    margin: 2px;
+    font-size: 15px;
+    padding: 0 10px;
+}
+textarea#noidung {
+    padding: 10px;
+    width: 1300px;
+    /* height: 350px; */
+    font-size: 15px;
+}
+input.submit-contact {
+    width: 26%;
+    height: 30px;
+    background: #42210b;
+    color: white;
+    /* border-radius: 9%; */
+}
+form.infor {
+    padding: 0px 150px;
+}
